@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ejercicio 8
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<ion-button size="large" (click)="checkflash()" color="{{color}}" *ngIf="show"> <ion-icon name="bulb"></ion-icon></ion-button>
+  <ion-chip color="danger" *ngIf="message">
+      <ion-label color="danger">Flash no disponible</ion-label>
+      <ion-icon color="danger" name="close"></ion-icon>
+  </ion-chip>
+</ion-content>
